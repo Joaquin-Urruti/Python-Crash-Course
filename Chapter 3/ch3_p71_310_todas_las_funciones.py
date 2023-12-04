@@ -1,0 +1,21 @@
+food = ['bread', 'bananas', 'milk', 'pinuts', 'cake', 'apples']
+
+print(len(food))
+print(sorted(food))
+print(sorted(food, reverse=True))
+food.sort()
+print(food)
+food.sort(reverse=True)
+print(food)
+food.reverse()
+print(food)
+food.append('biscuits')
+print(food)
+food.pop(0)
+print(food)
+del food[1]
+print(food)
+food.insert(3, 'sandwich')
+print(food)
+food.remove('pinuts')
+print(food)
