@@ -1,0 +1,10 @@
+Con Python se pueden hacer casi infinitas cosas
+Con Python se puede eer archivos
+Con Python se puede crear archivos
+Con Python se puede hacer loops for y while
+Con Python se puede checkear si un valor existe dentro de una lista
+Con Python se puede hacer cálculos matemáticos
+Con Python se puede cambiar nombres de archivos de manera masiva
+Con Python se puede crear Juegos
+Con Python se puede crear paginas web
+Con Python se puede leer datos de APIs
