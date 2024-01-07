@@ -1,3 +1,5 @@
-def ciudad_pais(ciudad, pais):
-	ciudad_formated = f'{ciudad.title()}, {pais.title()}'
-	return	ciudad_formated
+def ciudad_pais(ciudad, pais, poblacion=None):
+	salida = f'{ciudad.title()}, {pais.title()}'
+	if poblacion:
+		salida += f' - {poblacion} habitantes'
+	return	salida
