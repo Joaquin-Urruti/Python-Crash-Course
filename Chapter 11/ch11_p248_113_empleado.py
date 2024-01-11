@@ -2,7 +2,7 @@ class Empleado:
 	"""Clase que representa a un empleado"""
 
 	def __init__(self, nombre, apellido, salario_anual):
-		"""Guarda los datos del empleado"""
+		"""Guarda los datos del empleado: Nombre, Apellido y sueldo anual"""
 		self.nombre =  nombre
 		self.apellido = apellido
 		self.salario_anual = salario_anual
