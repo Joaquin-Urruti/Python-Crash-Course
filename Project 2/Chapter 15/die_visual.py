@@ -1,5 +1,6 @@
 from die import Die
-import matplotlib.pyplot as plt
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
 
 # Creo un dado de 6 caras
 die = Die()
@@ -17,6 +18,13 @@ for value in range(1, caras):
 	frecuencia = results.count(value)
 	frecuencias.append(frecuencia)
 
-plt.plot(frecuencias)
-plt.show()
+# Visualizar los resultados
+x_values = list(range(1, caras))
+data = [Bar(x=x_values, y=frecuencias)]
 
+x_axis_config = {'title': 'Result'}
+y_axis_config = {'title': 'Frecuency of Result'}
+
+my_layout = Layout(title='Results of rolling one D6 1000 times.', xaxis=x_axis_config, yaxis=y_axis_config)
+
+offline.plot({'data':data, 'layout': my_layout}, filename='dg.html')
