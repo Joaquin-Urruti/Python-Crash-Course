@@ -3,17 +3,18 @@ from plotly.graph_objs import Bar, Layout
 from plotly import offline
 
 # Creo un dado de 6 caras
-die = Die()
+die_1 = Die()
+die_2 = Die()
 
-# Hacer 100 tiros
+# Hacer 1000 tiros y guardar los resultados en una lista
 results = []
 for roll_num in range(1000):
-	result = die.roll()
+	result = die_1.roll() + die_2.roll()
 	results.append(result)
 
 # Analizamos los resultados
 frecuencias = []
-caras = die.num_sides+1
+caras = die_1.num_sides+1
 for value in range(1, caras):
 	frecuencia = results.count(value)
 	frecuencias.append(frecuencia)
