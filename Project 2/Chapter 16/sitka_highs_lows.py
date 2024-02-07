@@ -33,10 +33,11 @@ ax.plot(dates, lows, c='blue')
 plt.fill_between(dates, highs, lows, facecolor='grey', alpha=0.5)
 
 # Da formato al trazado
-plt.title('Daily high & low temperatures, July 18', fontsize=16)
+plt.title('Daily high & low temperatures', fontsize=16)
 plt.xlabel('', fontsize=14)
 fig.autofmt_xdate()
 plt.ylabel('Temperature (F)', fontsize=14)
 plt.tick_params(axis='both', which='major', labelsize=10)
+plt.ylim(10, 130)
 
 plt.show()
